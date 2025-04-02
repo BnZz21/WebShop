@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <link rel="icon" href="WiparkFavicon.ico">
+        <title>Registrierungsformular</title>
+    </head>
+    <body>
+
+        <img src="WiparkLogo.png" alt="WiparkLogo">
+        <h1>Registrierungsformular :)</h1>
+
+        <form>
+            <div>
+                <label hidden for="fname1">Vorname eingeben</label>
+                <input id="fname1" type="text" name="firstname" placeholder="Vorname" required>
+            </div>
+            <div>
+                <label hidden for="lname1">Nachname eingeben</label>
+                <input id="lname1" type="text" name="lastname" placeholder="Nachname" required>
+            </div>
+            <div>
+                <label hidden for="adress1">Adresse eingeben</label>
+                <input id="adress1" type="text" name="adress" placeholder="Adresse" required>
+            </div>
+            <div>
+                <label hidden for="plz1">Postleitzahl eingeben</label>
+                <input  id="plz1" type="number" name="plz" placeholder="PLZ" pattern="[0-9]{1-10}" required>
+            </div>
+            <div>
+                <label hidden for="mail1">E-Mail eingeben</label>
+                <input id="mail1" type="email" name="E-Mail"  placeholder="E-Mail Adresse" required>
+            </div>  
+            <div>
+                <label hidden for="tel1">Telefonnummer eingeben</label>
+                <input id="tel1=" type="number" name="telnumber" placeholder="Telefonnummer" pattern="[0-9]{5-15}" required>
+            </div>
+            <div>
+                <label hidden for="pass1">Passwort eingeben</label>
+                <input id="pass1" type="password" placeholder="Passwort" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                title="Das Passwort muss mindestens eine Nummer, ein Gro&szlig;buchstaben, ein Kleinbuchstaben haben und mindestens 8 Zeichen lang sein" required>  
+            </div>     
+            <div>
+                <!-- Button als INPUT-->
+                <!-- <input type="submit" value="Abschicken" -->
+
+                <!-- Button als Button Element-->
+                <button type="submit">Senden</button>
+            </div>
+        </form>
+
+    </body>
+</html>
